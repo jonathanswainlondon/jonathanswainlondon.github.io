@@ -1,0 +1,43 @@
+# Site settings
+title: "Jonathan Swain"
+description: "London Ontario Accountant Administrator Clerk Bookkeeper Professional"
+
+# Build settings
+markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Resume settings
+resume_name:                    "Jonathan Swain"
+resume_title:                   "Accountant"
+resume_contact_email:           "jonathanswainlondon@gmail.com"
+
+# use "yes" to display the email contact button,
+# "no" to display an "I'm not looking for work" message,
+# or remove the resume_looking_for_work option entirely
+# to leave blank
+resume_looking_for_work:        "yes"
+
+# Decide which sections to use
+# comment out to hide
+resume_section_experience:      true
+resume_section_education:       true
+resume_section_projects:        false
+resume_section_skills:          true
+resume_section_recognition:     false
+resume_section_links:           false
+resume_section_associations:    true
+
+# Social links
+resume_social_links:
+  resume_github_url:            "https://github.com/jonathanswainlondon"
+  #resume_twitter_url:           "insert your Twitter URL here"
+  #resume_dribbble_url:          "insert your Dribble URL here"
+  resume_facebook_url:          "https://www.facebook.com/jonathan.swain.5"
+  #resume_linkedin_url:          "insert your LinkedIn URL here"
+  #resume_instagram_url:         "insert your Instagram URL here"
+  resume_website_url:           "https://jonathanswainlondon.github.io"
+
+# Design settings
+resume_theme:                   default

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+    <div class="wrapper" itemscope itemtype="http://schema.org/Person">
+      <header class="page-header">
+        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+
+        <div class="title-bar">
+          <h2 class="header-title" itemprop="jobTitle">{{ site.resume_title }}</h2>
+          {% include icon-links.html %}
+        </div>
+
+        <div class="executive-summary" itemprop="description">
+          <p>My primary objective is to secure full time employment in an administrative position.</p>
+          <p>
+          I am a highly motivated, organized, attentive and dedicated individual.<br/>
+          I am always enthusiastic to learn and expand on my knowledge, skills and experience.
+          </p>
+          <p>I am available within short notice and may accomodate flexible hours, shifts and weekends.</p>
+        </div>
+
+        {% if site.resume_looking_for_work == 'yes' %}
+        <a href="mailto:{{ site.resume_contact_email }}" class="contact-button" itemprop="email">Contact me</a>
+        {% elsif site.resume_looking_for_work == 'no' %}
+        <a class="contact-button not-looking">I'm not looking for work right now.</a>
+        {% else %}
+        {% endif %}
+      </header>
+      {% if site.resume_section_experience %}
+      <!-- begin Experience -->
+      <section class="content-section">
+        <header class="section-header"><h2>Experience</h2></header>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Super 8 Hotel</h3>
+          <h4 class="resume-item-details" itemprop="description">Night Auditor &bull; London, Ontario &bull; July, 2008 &mdash; Present</h4>
+          <ul class="resume-item-list">
+            <li>Daily activity reports, shift change and end of day summaries</li>
+            <li>Monthly revenue reports</li>
+            <li>Period and year to date reports</li>
+            <li>Daily maid worksheets</li>
+            <li>Frontdesk and concierge</li>
+            <li>Night security and conflict resolution</li>
+          </ul>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Business Solutions</h3>
+          <h4 class="resume-item-details" itemprop="description">Junior Clerk &bull; Echo Bay, Ontario &bull; June, 2007 &mdash; April, 2008</h4>
+          <ul class="resume-item-list">
+            <li>Digital recording and physical filing of all transactions</li>
+            <li>Current and past annual financial statements</li>
+            <li>Customer and sales support</li>
+            <li>Marketing and business analysis support</li>
+          </ul>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Ontario Coalition of Aboriginal People</h3>
+          <h4 class="resume-item-details" itemprop="description">Bookkeeper &bull; Blind River, Ontario &bull; April, 2007 &mdash; April, 2008</h4>
+          <ul class="resume-item-list">
+            <li>Digital recording and physical filing of all transactions</li>
+            <li>Quarterly, monthly and annual financial statements</li>
+          </ul>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Sobey's</h3>
+          <h4 class="resume-item-details" itemprop="description">Grocer, London, Ontario &bull; July, 2006 &mdash; April, 2007</h4>
+          <ul class="resume-item-list">
+            <li>Inventory management</li>
+            <li>Customer suppport</li>
+          </ul>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="worksFor" itemtype="http://schema.org/Organization">
+          <h3 class="resume-item-title" itemprop="name">Tim Horton's</h3>
+          <h4 class="resume-item-details" itemprop="description">Baker, London, Ontario &bull; May, 2000 &mdash; May, 2006</h4>
+          <ul class="resume-item-list">
+            <li>Daily preparation and baking of baker goods</li>
+            <li>Product display finishing</li>
+            <li>Inventory management</li>
+            <li>Health and safety champion</li>
+            <li>Logistics support</li>
+          </ul>
+        </div>
+      </section>
+      <!-- end Experience -->
+      {% endif %}
+      {% if site.resume_section_education %}
+      <!-- begin Education -->
+      <section class="content-section">
+        <header class="section-header"><h2>Education</h2></header>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Fanshawe College</h3>
+          <h4 class="resume-item-details" itemprop="description">Business Accounting - Bookkeeping and Payroll &bull; 2016 &mdash; Present</h4>
+          <ul class="resume-item-list">
+            <li>Fulltime Student</li>
+          </ul>
+        </div>
+
+        <div class="resume-item" itemscope itemprop="alumniOf" itemtype="http://schema.org/CollegeOrUniversity">
+          <h3 class="resume-item-title" itemprop="name">Fanshawe College</h3>
+          <h4 class="resume-item-details" itemprop="description">Business - Accounting &bull; 2005 &mdash; 2007</h4>
+          <ul class="resume-item-list">
+            <li>Intermediate Accounting</li>
+            <li>Taxation</li>
+            <li>Macro &amp; Micro Economics</li>
+            <li>Marketing</li>
+            <li>Business Law</li>
+            <li>Computer Applications</li>
+            <li>Applied Computer Applications</li>
+            <li>Personal Financial Planning</li>
+            <li>Cost Accounting</li>
+            <li>ACCPAC</li>
+            <li>Statistics</li>
+          </ul>
+        </div>
+      </section>
+      <!-- end Education -->
+      {% endif %}
+      {% if site.resume_section_projects %}
+      <!-- begin Projects -->
+      <section class="content-section">
+        <header class="section-header"><h2>Projects</h2></header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">Example Project</h3>
+          <h4 class="resume-item-details">Title &bull; 2007 &mdash; Present</h4>
+          <p class="resume-item-copy">Example summary.</p>
+        </div>
+      </section>
+      <!-- end Projects -->
+      {% endif %}
+      {% if site.resume_section_skills %}
+      <!-- begin Skills -->
+      <section class="content-section">
+        <header class="section-header"><h2>Skills</h2></header>
+
+        <div class="resume-item">
+          <h4 class="resume-item-details">Software</h4>
+          <p class="resume-item-copy">QuickBooks, Simply Accounting, Microsoft Excel, Microsoft Word</p>
+        </div>
+      </section>
+      <!-- end Skills -->
+      {% endif %}
+      {% if site.resume_section_recognition %}
+      <!-- begin Recognition -->
+      <section class="content-section">
+        <header class="section-header"><h2>Recognition</h2></header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title" itemprop="award">Example Title</h3>
+          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
+          <p class="resume-item-copy">Example awarded description.</p>
+        </div>
+      </section>
+      <!-- end Recognition -->
+      {% endif %}
+      {% if site.resume_section_associations %}
+      <!-- begin Associations -->
+      <section class="content-section">
+        <header class="section-header"><h2>Associations</h2></header>
+
+        <div class="resume-item">
+          <h3 class="resume-item-title">South London Hockey Association</h3>
+          <h4 class="resume-item-details">Treasurer &bull; 2016 &mdash; Present</h4>
+          <ul class="resume-item-list">
+            <li>Volunteer</li>
+          </ul>
+        </div>
+      </section>
+      <!-- end Associations -->
+      {% endif %}
+      {% if site.resume_section_links %}
+      <!-- begin Links -->
+      <section class="content-section">
+        <header class="section-header"><h2>Additional Links</h2></header>
+
+        <div class="resume-item">
+          <ul class="resume-item-list">
+            <li><a href="#">Example Link</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- end Links -->
+      {% endif %}
+      <footer class="page-footer">
+        <p class="footer-line">References available upon request</p>
+      </footer>
+    </div>
+  </body>
+</html>
