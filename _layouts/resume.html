@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
-  <body class="theme-{% if site.resume_theme %}{{ site.resume_theme }}{% endif %}">
+  <body>
     <div class="wrapper" itemscope itemtype="http://schema.org/Person">
       <header class="page-header">
         <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
@@ -149,12 +149,18 @@
       {% if site.resume_section_recognition %}
       <!-- begin Recognition -->
       <section class="content-section">
-        <header class="section-header"><h2>Recognition</h2></header>
-
+        <header class="section-header"><h2>Artifacts</h2></header>
         <div class="resume-item">
-          <h3 class="resume-item-title" itemprop="award">Example Title</h3>
-          <h4 class="resume-item-details">Outstanding Achievement &bull; 2010</h4>
-          <p class="resume-item-copy">Example awarded description.</p>
+          <ul class="resume-item-list">
+            <li>Class of 1999 Montcalm Secondary School Diploma</li>
+            <li>Class of 2007 Fanshawe College Diploma in Business Accounting</li>
+            <li><a href="artifacts/Testimonial From Donald Richardson.docx">Testimonial of Donald Richardson, Permanent Resident of The London Wellington Hotel (Formerly Super 8 Hotel)</a></li>
+            <li>Former Owner of "Swain's Card Shack" From July 1997 to August 1999 at Microplay Video Game Rental Store formerly located on Highbury and Cheapside</li>
+            <li>1999 Red Circle Hockey League "Most Improved Player" Award</li>
+            <li>2000 North London Playoff MVP for Championship Team</li>
+            <li>Assistant Treasurer of the Ontario Coalition of Aboriginal Peoples from July 2007 to June 2008</li>
+            <li>Night Shift Supervisor of London Wellington Hotel From January 2010 to August 2016</li>
+          </ul>
         </div>
       </section>
       <!-- end Recognition -->
@@ -181,7 +187,14 @@
 
         <div class="resume-item">
           <ul class="resume-item-list">
-            <li><a href="#">Example Link</a></li>
+            <li><a href="artifacts/Biography for Jon Swain.docx">Biography</a></li>
+            <li><a href="artifacts/Cover Letter for Jon Swain.docx">Cover Letter</a></li>
+            <li><a href="artifacts/IMG_0001.pdf">Fanshawe College Diploma - Business - Accounting</a></li>
+            <li><a href="artifacts/IMG_0002.pdf">Montcalm Secondary School Diploma</a></li>
+            <li><a href="artifacts/Jonathan Swain Resume 2016.docx">Resume</a></li>
+            <li><a href="artifacts/Letter of Recommendation From Leah Charette.docx">Letter of Recommendation From Leah Charette</a></li>
+            <li><a href="artifacts/List of Artifacts.docx">List of Artifacts</a></li>
+            <li><a href="artifacts/Testimonial From Donald Richardson.docx">Testimonial From Donald Richardson</a></li>
           </ul>
         </div>
       </section>
